@@ -1,0 +1,91 @@
+.FollowersModal-custom-modal .modal-dialog {
+  position: relative;
+  display: inline-block;
+  left: 100px;
+  width: 500px;
+  border-radius: 5px;
+
+}
+
+.FollowersModal-custom-modal .modal-content {
+  background-color: white;
+  border-radius: 5px;
+  top: 38px;
+
+}
+
+/* .FollowersModal-custom-modal .modal-content {
+  background-color: white;
+  border-radius: 5px;
+  left: -500px;
+  top: 38px;
+} */
+
+.FollowersModal-modal-title-box {
+  position: relative;
+  display: inline-block;
+  right: 450px;
+  width: 490px;
+
+  border-bottom: 1px solid rgba(214, 214, 214, 0.732);
+
+}
+
+.FollowersModal-modal-title {
+  top: -5px;
+  width: 150px;
+  left: 195px;
+  font-weight: bold;
+  font-size: large;
+  display: inline-block;
+  position: relative;
+}
+
+.FollowersModal-border-0 {
+  top: 0px;
+  left: 440px;
+  display: inline-block;
+  position: relative;
+}
+
+.FollowersModal-border-0 .btn-close {
+  top: -35px;
+  left: 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.FollowersModal-modal-body {
+  min-height: 170px;
+}
+
+.followers-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 8px;
+}
+
+.list-unstyled {
+  position: relative;
+  font-weight: bold;
+  top: -50px;
+  right: 160px;
+}
+
+.mb-2 {
+  margin-top: 20px;
+}
+
+.FollowersModal-ms-3 {
+  top: -30px;
+  left: -20px;
+  display: inline-block;
+  position: relative;
+
+}
+
+.Followersmodalcursor {
+  cursor: pointer;
+}

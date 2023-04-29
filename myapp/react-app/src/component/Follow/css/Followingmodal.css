@@ -1,0 +1,78 @@
+.FollowingModal-custom-modal .modal-dialog {
+  width: 500px;
+  border-radius: 5px;
+}
+
+.FollowingModal-custom-modal .modal-content {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.FollowingModal-modal-title-box {
+  position: relative;
+  display: inline-block;
+  right: 450px;
+  width: 490px;
+
+  border-bottom: 1px solid rgba(214, 214, 214, 0.732);
+
+}
+
+.FollowingModal-modal-title {
+  top: -5px;
+  width: 150px;
+  left: 195px;
+  font-weight: bold;
+  font-size: large;
+  display: inline-block;
+  position: relative;
+}
+
+.FollowingModal-border-0 {
+  top: 0px;
+  left: 440px;
+  display: inline-block;
+  position: relative;
+}
+
+.FollowingModal-border-0 .btn-close {
+  top: -35px;
+  left: 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.FollowingModal-modal-body {
+  min-height: 170px;
+}
+
+.following-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-bottom: 8px;
+}
+
+.list-unstyled {
+  position: relative;
+  font-weight: bold;
+  top: -50px;
+  right: 160px;
+}
+
+.mb-2 {
+  margin-top: 20px;
+}
+
+.FollowingModal-ms-3 {
+  top: -30px;
+  left: -20px;
+  display: inline-block;
+  position: relative;
+
+}
+
+.Followingmodalcursor {
+  cursor: pointer;
+}

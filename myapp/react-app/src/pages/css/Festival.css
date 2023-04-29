@@ -1,0 +1,364 @@
+@font-face {
+  font-family: "Sriracha-Regular";
+  font-weight: 35;
+  src: url("../font/Sriracha-Regular.ttf");
+}
+
+
+.fbody{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.image1 ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.fcontainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+position: relative;
+}
+
+.image1{
+  /* left: -250px; */
+  width: 360px;
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.festival1{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-image: url("../img/5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 360px 350px;
+  cursor: pointer;
+  transition: .6s all;
+}
+
+.festival1-effect{
+  background-color: rgb(101, 97, 96);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform .4s;
+  opacity: .6;
+  border: 1px solid black;
+
+}
+
+
+.image1:hover .festival1{
+  background-size: 138%;
+}
+
+.image1:hover .festival1-effect {
+  transform: translateY(0);
+}
+/*-------------------------------------------글씨*/
+/*애니메이션 ㄴㄴ할때*/
+
+
+.ftext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ftext li {
+  opacity: 0;
+  color: #ffff;
+  font-size: 2rem;
+  font-family: "Sriracha-Regular";
+  transition: all .4s;
+  user-select: none;
+}
+
+.image1:hover .ftext li:nth-of-type(1){
+  animation-delay: 0s;
+}
+.image1:hover .ftext li:nth-of-type(2){
+  animation-delay: .1s;
+}
+.image1:hover .ftext li:nth-of-type(3){
+  animation-delay: .2s;
+}
+.image1:hover .ftext li:nth-of-type(4){
+  animation-delay: .3s;
+}
+.image1:hover .ftext li:nth-of-type(5){
+  animation-delay: .4s;
+}
+.image1:hover .ftext li:nth-of-type(6){
+  animation-delay: .5s;
+}
+.image1:hover .ftext li {
+  animation: moveUp .2s forwards;
+}
+
+@keyframes moveUp {
+  0% {
+      opacity: 0;
+      transform:translateY(2rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform:translateY(0);
+  }
+}
+
+
+
+
+
+/*----------------------------------------------------------------------2*/
+.image2{
+  /* left: -150px; */
+  width: 360px;
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.image2 ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.festival2{
+  width: 100%;
+  height: 100%;
+  /* background-blend-mode: lighten; */
+  background-color: rgb(0, 0, 0);
+  background-image: url("../img/2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 360px 350px;
+  cursor: pointer;
+  transition: .4s all;
+}
+
+.festival2-effect{
+  background-color: rgb(101, 97, 96);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform .4s;
+  opacity: .6;
+  border: 1px solid black;
+}
+
+
+.image2:hover .festival2 {
+  background-size: 135%;
+}
+
+.image2:hover .festival2-effect {
+  transform: translateX(0);
+}
+
+
+
+.image2:hover .ftext li:nth-of-type(1){
+  animation-delay: 0s;
+}
+.image2:hover .ftext li:nth-of-type(2){
+  animation-delay: .1s;
+}
+.image2:hover .ftext li:nth-of-type(3){
+  animation-delay: .2s;
+}
+.image2:hover .ftext li:nth-of-type(4){
+  animation-delay: .3s;
+}
+.image2:hover .ftext li:nth-of-type(5){
+  animation-delay: .4s;
+}
+.image2:hover .ftext li:nth-of-type(6){
+  animation-delay: .5s;
+}
+.image2:hover .ftext li {
+  animation: moveUp .2s forwards;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------3*/
+.image3{
+  
+  width: 360px;
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.image3 ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.festival3{
+  width: 100%;
+  height: 100%;
+  /* background-blend-mode: lighten; */
+  background-color: rgb(0, 0, 0);
+  background-image: url("../img/3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 360px 350px;
+  cursor: pointer;
+  transition: .4s all;
+}
+
+.festival3-effect{
+  background-color: rgb(101, 97, 96);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: transform .4s;
+  opacity: .6;
+  border: 1px solid black;
+}
+
+
+.image3:hover .festival3 {
+  background-size: 135%;
+}
+
+.image3:hover .festival3-effect {
+  transform: translateY(0);
+}
+
+.image3:hover .ftext li:nth-of-type(1){
+  animation-delay: 0s;
+}
+.image3:hover .ftext li:nth-of-type(2){
+  animation-delay: .1s;
+}
+.image3:hover .ftext li:nth-of-type(3){
+  animation-delay: .2s;
+}
+.image3:hover .ftext li:nth-of-type(4){
+  animation-delay: .3s;
+}
+.image3:hover .ftext li:nth-of-type(5){
+  animation-delay: .4s;
+}
+.image3:hover .ftext li:nth-of-type(6){
+  animation-delay: .5s;
+}
+.image3:hover .ftext li {
+  animation: moveUp .2s forwards;
+}
+
+/*----------------------------------------------------------------------4*/
+.image4{
+  
+  width: 360px;
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.image4 ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.festival4{
+  width: 100%;
+  height: 100%;
+  /* background-blend-mode: lighten; */
+  background-color: rgb(0, 0, 0);
+  background-image: url("../img/4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 360px 350px;
+  cursor: pointer;
+  transition: .4s all;
+}
+
+.festival4-effect{
+  background-color: rgb(101, 97, 96);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform .4s;
+  opacity: .6;
+  border: 1px solid black;
+}
+
+
+.image4:hover .festival4 {
+  background-size: 100%;
+}
+
+.image4:hover .festival4-effect {
+  transform: translateX(0);
+}
+
+.image4:hover .ftext li:nth-of-type(1){
+  animation-delay: 0s;
+}
+.image4:hover .ftext li:nth-of-type(2){
+  animation-delay: .1s;
+}
+.image4:hover .ftext li:nth-of-type(3){
+  animation-delay: .2s;
+}
+.image4:hover .ftext li:nth-of-type(4){
+  animation-delay: .3s;
+}
+.image4:hover .ftext li:nth-of-type(5){
+  animation-delay: .4s;
+}
+.image4:hover .ftext li:nth-of-type(6){
+  animation-delay: .5s;
+}
+.image4:hover .ftext li {
+  animation: moveUp .2s forwards;
+}

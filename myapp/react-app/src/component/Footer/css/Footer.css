@@ -1,0 +1,63 @@
+.footer {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  padding: 40px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.footer .logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f9a825;
+}
+
+.footer-section h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #f9a825;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #f0f0f0;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+/* Font Awesome icon style */
+.fas {
+  margin-right: 8px;
+}

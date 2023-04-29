@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bitcamp.myapp.dao.LikeDao">
+
+  <resultMap type="like" id="likeMap">
+    <id column="like_id" property="id"/>
+    <result column="board_id" property="boardId"/>
+    
+    <association property="member" javaType="member">
+      <id column="member_id" property="no"/>
+      <result column="name" property="name"/>
+      <result column="nickName" property="nickName"/>
+    </association>
+  </resultMap>
+
+  <insert id="insertLike" parameterType="like">
+    insert into hms_like (board_id, member_id)
+    values (#{boardId}, #{member.no})
+  </insert>
+
+  <select id="findLikesByPostId" resultMap="likeMap" parameterType="int">
+    select
+      l.like_id,
+      l.board_id,
+      l.member_id,
+      m.name,
+      (select nick from hms_mem where member_id = l.member_id) nickName
+    from
+      hms_like l
+      inner join hms_mem m on l.member_id = m.member_id
+    where
+      l.board_id = #{boardId}
+  </select>
+
+  <select id="findLikeByPostIdAndUserId" resultMap="likeMap" parameterType="like">
+    select
+      l.like_id,
+      l.board_id,
+      l.member_id,
+      m.name,
+      (select nick from hms_mem where member_id = l.member_id) nickName
+    from
+      hms_like l
+      inner join hms_mem m on l.member_id = m.member_id
+    where
+      l.board_id = #{boardId}
+      and l.member_id = #{member.no}
+  </select>
+
+  <delete id="deleteLike" parameterType="like">
+    delete from hms_like
+    where board_id = #{boardId}
+    and member_id = #{member.no}
+  </delete>
+
+</mapper>

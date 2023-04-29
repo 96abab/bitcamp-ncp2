@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bitcamp.myapp.dao.BoardDao">
+
+  <resultMap type="board" id="boardMap">
+    <id column="board_id" property="no"/>
+    <result column="title" property="title"/>
+    <result column="content" property="content"/>
+    <result column="pwd" property="password"/>
+    <result column="created_date" property="createdDate"/>
+    <result column="view_cnt" property="viewCount"/>
+    <result column="likes" property="likes"/>
+    
+    <association property="writer" javaType="member">
+      <id column="writer" property="no"/>
+      <result column="name" property="name"/>
+      <result column="nickName" property="nickName"/>
+    
+  </association>
+    
+    
+    <collection property="attachedFiles" ofType="boardfile">
+      <id column="boardfile_id" property="no"/>
+      <result column="filepath" property="filepath"/>
+      <result column="origin_filename" property="originalFilename"/>
+      <result column="mime_type" property="mimeType"/>
+      <result column="board_id" property="boardNo"/>
+    </collection>
+  
+
+  </resultMap>
+
+  <insert id="insert" parameterType="board" 
+          useGeneratedKeys="true" keyColumn="board_id" keyProperty="no">
+    insert into hms_gall(title, content, writer) 
+    values(#{title}, #{content}, #{writer.no})
+  </insert>
+
+<select id="findAll" resultMap="boardMap" parameterType="string">
+  select 
+    b.board_id, 
+    b.title, 
+    b.writer,
+    b.comment,
+    b.created_date, 
+    b.view_cnt,
+    m.name,
+    m.nick,
+    gf.filepath,
+    COUNT(lt.board_id) AS likes
+  from 
+    hms_mem m
+    inner join hms_gall b on m.member_id = b.writer
+    inner join hms_gall_file gf on b.board_id = gf.board_id
+    left join hms_like lt on b.board_id = lt.board_id
+  group by
+    b.board_id,
+    b.title,
+    b.writer,
+    b.comment,
+    b.created_date,
+    b.view_cnt,
+    m.name,
+    m.nick,
+    gf.filepath
+  order by
+    b.board_id desc
+</select>
+
+<select id="findPeak" resultMap="boardMap" parameterType="string">
+SELECT
+    b.board_id,
+    b.title,
+    b.writer,
+    b.comment,
+    b.created_date,
+    b.view_cnt,
+    bf.boardfile_id,
+    bf.filepath,
+    bf.origin_filename,
+    bf.mime_type,
+    bf.board_id
+FROM
+    hms_gall b
+    INNER JOIN hms_gall_file bf ON b.board_id = bf.board_id
+WHERE
+    title LIKE CONCAT('%', '피크', '%');
+</select>
+
+<select id="findNightMarket" resultMap="boardMap" parameterType="string">
+SELECT
+    b.board_id,
+    b.title,
+    b.writer,
+    b.comment,
+    b.created_date,
+    b.view_cnt,
+    bf.boardfile_id,
+    bf.filepath,
+    bf.origin_filename,
+    bf.mime_type,
+    bf.board_id
+FROM
+    hms_gall b
+    INNER JOIN hms_gall_file bf ON b.board_id = bf.board_id
+WHERE
+    title LIKE CONCAT('%', '야시장', '%');
+</select>
+
+<select id="findFirework" resultMap="boardMap" parameterType="string">
+SELECT
+    b.board_id,
+    b.title,
+    b.writer,
+    b.comment,
+    b.created_date,
+    b.view_cnt,
+    bf.boardfile_id,
+    bf.filepath,
+    bf.origin_filename,
+    bf.mime_type,
+    bf.board_id
+FROM
+    hms_gall b
+    INNER JOIN hms_gall_file bf ON b.board_id = bf.board_id
+WHERE
+    title LIKE CONCAT('%', '불꽃축제', '%');
+</select>
+
+
+<select id="findDron" resultMap="boardMap" parameterType="string">
+SELECT
+    b.board_id,
+    b.title,
+    b.writer,
+    b.comment,
+    b.created_date,
+    b.view_cnt,
+    bf.boardfile_id,
+    bf.filepath,
+    bf.origin_filename,
+    bf.mime_type,
+    bf.board_id
+FROM
+    hms_gall b
+    INNER JOIN hms_gall_file bf ON b.board_id = bf.board_id
+WHERE
+    title LIKE CONCAT('%', '드론', '%');
+</select>
+
+
+
+  <select id="findByNo" parameterType="int" resultMap="boardMap">
+    select 
+      b.board_id, 
+      b.title, 
+      b.content,
+      b.writer,
+      b.comment, 
+      (select nick from hms_mem where member_id = b.writer) nickName, 
+      b.created_date, 
+      b.view_cnt,
+      bf.boardfile_id,
+      bf.filepath, 
+      bf.origin_filename,
+      bf.mime_type
+    from 
+      hms_gall b
+      left outer join hms_gall_file bf on b.board_id = bf.board_id
+    where
+    b.board_id=#{no}
+  </select>
+  
+  <select id="findByUserId" resultMap="boardMap" parameterType="map">
+    select 
+      b.board_id, 
+      b.title, 
+      b.writer,
+      b.content,
+      b.created_date, 
+      b.view_cnt,
+      m.member_id,
+      m.name,
+      (select nick from hms_mem where member_id = b.writer) nickName,
+      bf.boardfile_id,
+      bf.filepath, 
+      bf.origin_filename,
+      bf.mime_type
+    from 
+      hms_mem m
+      inner join hms_gall b on m.member_id = b.writer
+      left outer join hms_gall_file bf on b.board_id = bf.board_id
+    where
+      m.member_id = #{userId}
+    <if test="keyword != null and keyword != ''">
+      AND (b.title LIKE CONCAT('%', #{keyword}, '%') OR b.content LIKE CONCAT('%', #{keyword}, '%'))
+    </if>
+    order by
+    b.board_id desc
+  </select>
+  
+  <update id="increaseViewCount" parameterType="int">
+    update hms_gall set
+      view_cnt = view_cnt +1
+    where board_id=#{no}
+  </update>
+  
+  <update id="update" parameterType="board">
+    update hms_gall set 
+      title=#{title}, 
+      content=#{content} 
+    where board_id=#{no}
+  </update>
+  
+  <delete id="deleteComments" parameterType="int">
+    delete from hms_comm
+    where board_id=#{no}
+</delete>
+  
+  <delete id="deleteLikes" parameterType="int">
+    delete from hms_like
+    where board_id=#{no}
+</delete>
+  
+  <delete id="delete" parameterType="int">
+    delete from hms_gall 
+    where board_id=#{no}
+  </delete>
+</mapper>
+
+
+
+
+

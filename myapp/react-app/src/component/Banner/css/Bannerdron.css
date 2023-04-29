@@ -1,0 +1,72 @@
+.bannerdron {
+  background-color: #000;
+  color: #fff;
+  height: 560px;
+  display: flex;
+  align-items: center;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: 100% 560px;
+
+}
+
+.bannerdron img {
+  width: 500px;
+  margin-left: 32px;
+}
+.bannerdron-text {
+
+margin-left: 100px;
+
+}
+
+.bannerdron-text h1 {
+  position: relative;
+  font-size: 48px;
+  margin-bottom: 32px;
+  line-height: 1.2;
+  animation: slide 1s ease-out;
+}
+
+.bannerdron-text p {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 40px;
+  animation: slide 1.2s ease-out;
+}
+
+.bannerdron-text a {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  position: relative;
+  animation: slide 1.5s ease-out;
+
+}
+@keyframes slide {
+  from{
+    left:-200px;
+    opacity: 0;
+  }
+  to{
+    left:0px;
+    opacity: 1;
+  }
+  
+}
+@keyframes disappear {
+  from{
+    left:0px;
+    opacity: 1;
+  }
+  to{
+    left:-200px;
+    opacity: 0;
+  }
+  
+}
+

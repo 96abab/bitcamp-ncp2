@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bitcamp.myapp.dao.MemberFileDao">
+
+  <resultMap type="memberfile" id="memberfileMap">
+    <id column="memberfile_id" property="no"/>
+    <result column="filepath" property="filepath"/>
+    <result column="origin_filename" property="originalFilename"/>
+    <result column="mime_type" property="mimeType"/>
+    <result column="member_id" property="memberNo"/>
+  </resultMap>
+
+  <insert id="insert" parameterType="memberfile">
+    insert into hms_mem_file(filepath, origin_filename, mime_type, member_id) 
+    values(#{filepath}, #{originalFilename}, #{mimeType}, #{memberNo})
+  </insert>
+  
+  <insert id="insertList">
+    insert into hms_mem_file(filepath, origin_filename, mime_type, member_id) 
+    values
+    <foreach collection="list" item="file" separator=",">
+      (#{file.filepath}, #{file.originalFilename}, #{file.mimeType}, #{file.memberNo})
+    </foreach>
+  </insert>
+
+  <select id="findAllOfMember" resultMap="memberfileMap" parameterType="int">
+    select 
+      memberfile_id, 
+      filepath, 
+      origin_filename,
+      mime_type,
+      member_id
+    from 
+      hms_mem_file
+    where 
+      member_id = ${no}
+    order by 
+      origin_filename asc
+  </select>
+
+  <select id="findByNo" parameterType="int" resultMap="memberfileMap">
+    select 
+      memberfile_id, 
+      filepath, 
+      origin_filename,
+      mime_type,
+      member_id
+    from 
+      hms_mem_file
+    where 
+      memberfile_id = ${no}
+  </select>
+  
+  <delete id="delete" parameterType="int">
+    delete from hms_mem_file 
+    where memberfile_id=#{no}
+  </delete>
+  
+  <delete id="deleteOfMember" parameterType="int">
+    delete from hms_mem_file 
+    where member_id=#{no}
+  </delete>
+</mapper>
+
+
+
+
+

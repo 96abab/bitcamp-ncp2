@@ -1,0 +1,269 @@
+.profilemodify {
+  position: relative;
+  background-color: #ffffff;
+  /* margin-left: 520px; */
+  margin-top: 20px;
+  width: 480px;
+  height: 750px;
+  display: grid;
+  grid-template-columns: 520px;
+  grid-template-rows: 250px 25px 75px 75px 75px 75px 85px 40px;
+}
+.profile {
+  background-color: rgb(121, 121, 121);
+  height: 250px;
+  width: 250px;
+  margin-left: 115px;
+  border-radius: 180px;
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+}
+
+.profilepick {
+  text-align: center;
+  font-weight: bold;
+}
+
+.profilename {
+  margin: 25px auto;
+  display: grid;
+  height: auto;
+  font-family: Arial;
+  font-size: 10px;
+  grid-template-columns: 80px 400px;
+  grid-template-rows: 50px;
+}
+
+.modifyname {
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  left: 19px;
+}
+
+.nameinputbox {
+  margin-left: 20px;
+  display: inline-block;
+  border: 0px;
+  border-bottom: 1px solid #000000;
+  height: auto;
+  font-size: 20px;
+  width:300px;
+}
+.profilenickename {
+  margin: 25px auto;
+  display: grid;
+  height: auto;
+  font-family: Arial;
+  font-size: 10px;
+  grid-template-columns: 80px 400px;
+  grid-template-rows: 50px;
+}
+
+.modifynick {
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  left: 10px;
+}
+
+.nickinputbox {
+  margin-left: 20px;
+  display: inline-block;
+  border: 0px;
+  border-bottom: 1px solid #000000;
+  height: auto;
+  font-size: 20px;
+  width:300px;
+}
+
+.profileintro {
+  margin: 25px auto;
+  display: grid;
+  height: auto;
+  font-family: Arial;
+  font-size: 10px;
+  grid-template-columns: 80px 400px;
+  grid-template-rows: 50px;
+}
+
+.modifyintro {
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  left: 10px;
+}
+
+.introinputbox {
+  margin-left: 20px;
+  display: inline-block;
+  border: 0px;
+  border-bottom: 1px solid #000000;
+  height: auto;
+  font-size: 20px;
+  width:300px;
+}
+
+
+.profileinter {
+  margin: 25px auto;
+  display: grid;
+  height: auto;
+  font-family: Arial;
+  font-size: 10px;
+  grid-template-columns: 80px 400px;
+  grid-template-rows: 50px;
+}
+.modifyinter {
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  width:100px;
+  position: relative;
+  right: 10px;
+}
+
+.interinputbox {
+  margin-left: 20px;
+  display: inline-block;
+  border: 0px;
+  border-bottom: 1px solid #000000;
+  height: auto;
+  font-size: 20px;
+  width:300px;
+}
+
+.profilehob {
+  margin: 25px auto;
+  display: grid;
+  height: auto;
+  font-family: Arial;
+  font-size: 10px;
+  grid-template-columns: 80px 400px;
+  grid-template-rows: 50px;
+}
+.modifyhob {
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  left: 19px;
+}
+
+.hobinputbox {
+  margin-left: 20px;
+  display: inline-block;
+  border: 0px;
+  border-bottom: 1px solid #000000;
+  height: auto;
+  font-size: 20px;
+  width:300px;
+}
+
+/*/
+
+
+
+
+
+/수정 취소버튼*/
+.okno {
+  display: grid;
+  grid-template-columns: 240px 240px;
+  grid-template-rows: 5px;
+}
+
+.modify {
+  display: inline-block;
+  margin-left: 90px;
+  margin-top: 20px;
+  width: 140px;
+  height: 50px;
+  border-radius: 20px;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #33A3F5;
+  color: #ffffff;
+}
+
+.cancel {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 140px;
+  height: 50px;
+  border-radius: 20px;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #33A3F5;
+  color: #ffffff;
+}
+
+div.modal-body {
+  margin: 35px auto;
+}
+.introprofile-preview-image-box{
+  background-color: #f1f1f1;
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  right: 105px;
+  bottom: 470px;
+  display: inline-block;
+  border:0px solid;
+
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+  border-radius: 120px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  /* background-image: url(http://tbxctpxzerdz16840769.cdn.ntruss.com/defaultprofile.jpg?type=f&w=260&h=260&faceopt=true&ttype=jpg); */
+}
+.introprofile-preview-image-box img{
+  width:260px;
+  height:260px;
+  border-radius: 125px;
+  border:0px solid;
+}
+.introprofile-preview-image-box span{
+  position: absolute;
+  display: inline-block;
+  width:150px;
+  right:50px;
+  top:115px;
+
+}
+.introprofile-preview-image{
+  position: absolute;
+  right: 105px;
+  bottom: 420px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 120px;
+ 
+}
+.intro-input-box{
+  position: relative;
+  display: inline-block;
+  bottom:70px;
+  
+}
+.introprofile-preview-image{
+  position: relative;
+  border:0px solid;
+}
+

@@ -1,0 +1,212 @@
+.firework-wrap {
+  position: relative;
+  display: inline-block;
+  top: 100px;
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  /* border:1px solid blue; */
+  text-align: center;
+}
+
+.firework-main {
+  position: relative;
+  display: inline-block;
+  width: 900px;
+  border: 1px solid red;
+  min-height: 2200px;
+  height: auto;
+  background: rgba(14, 14, 14, 0.99);
+  text-align: left;
+}
+
+.fire-img1 {
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 680px;
+  top: 50px;
+  /* border:1px solid blue; */
+  background-image: url(../img/fire1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fire-text1 {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+  left: 50px;
+  bottom: 400px;
+  /* border:1px solid blue; */
+}
+
+.fire-text1 h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: -15px;
+}
+
+.fire-text1 h6 {
+  color: white;
+  font-weight: bold;
+}
+
+.fire-img2 {
+  position: relative;
+  display: inline-block;
+  width: 340px;
+  height: 200px;
+  left: 530px;
+  bottom: 400px;
+  /* border:1px solid blue; */
+  background-image: url(../img/fire2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fire-text2 {
+  position: relative;
+  display: inline-block;
+  width: 340px;
+  height: 100px;
+  left: 205px;
+  bottom: 270px;
+  /* border:1px solid blue; */
+}
+
+.fire-text2 h6 {
+  color: white;
+  font-weight: bold;
+}
+
+.fire-img3 {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  bottom: 200px;
+  /* border:1px solid blue; */
+  background-image: url(../img/fire3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fire-text3 {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  bottom: 175px;
+  /* border:1px solid blue; */
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.fire-img4 {
+  position: relative;
+  display: inline-block;
+  width: 600px;
+  height: 390px;
+  bottom: 155px;
+  /* border:1px solid blue; */
+  background-image: url(../img/fire4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fire-img5 {
+  position: relative;
+  display: inline-block;
+  width: 298px;
+  height: 390px;
+  bottom: 155px;
+  /* border:1px solid blue; */
+  background-image: url(../img/fire5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fire-img6 {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 420px;
+  bottom: 155px;
+  /* border:1px solid blue; */
+  background-image: url(../img/fire6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fire-text4 {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  bottom: 120px;
+  left: 25px;
+  /* border:1px solid blue; */
+  color: white;
+  font-weight: bold;
+}
+
+.firework-map-box {
+  position: relative;
+  display: inline-block;
+  width: 900px;
+  height: 600px;
+  top: -100px;
+  /* border:1px solid red; */
+}
+
+.fire-map {
+  width: 900px;
+  height: 500px;
+  /* border:1px solid blue; */
+}
+
+.firework-image-container-wrap {
+  position: relative;
+  display: inline-block;
+  width: 950px;
+  top: -200px;
+  height: 500px;
+  left: 5px;
+}
+
+.firework-image-container {}
+
+.firework-image {
+  width: 287px;
+  height: 250px;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+  box-shadow: 6px 5px 3px rgba(0, 0, 0, 0.529);
+
+
+}
+
+.firework-image-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.firework-image-container::-webkit-scrollbar-track {
+  /* background-color: #f1f1f1; */
+}
+
+.firework-image-container::-webkit-scrollbar-thumb {
+  background-color: #ffffffee;
+  border-radius: 5px;
+}
+
+/* 스크롤바 위 아래 버튼 스타일 */
+.firework-image-container::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}

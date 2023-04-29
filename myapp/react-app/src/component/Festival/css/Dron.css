@@ -1,0 +1,348 @@
+.dron-wrap {
+  position: relative;
+  display: inline-block;
+  top: 100px;
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  /* border:1px solid blue; */
+  text-align: center;
+}
+
+.dron-main {
+  position: relative;
+  display: inline-block;
+  width: 900px;
+  /* border:1px solid blue; */
+  min-height: 3000px;
+  height: auto;
+  background-color: #0e1322;
+}
+
+.dron-poster-img {
+  position: relative;
+  display: inline-block;
+  width: 700px;
+  height: 1000px;
+  /* border:1px solid blue; */
+  background-image: url(../img/dron-poster.jpg);
+  background-size: cover;
+}
+
+.dron-img1 {
+  position: relative;
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  top: 50px;
+  right: 25px;
+
+  background-image: url(../img/dron1.jpg);
+  background-size: cover;
+}
+
+.dron-img2 {
+  position: relative;
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  top: 50px;
+  left: 25px;
+
+  background-image: url(../img/dron2.jpeg);
+  background-size: cover;
+
+}
+
+.dron-text1 {
+  position: relative;
+  display: inline-block;
+  width: 700px;
+  height: 50px;
+  top: 100px;
+  /* border:1px solid blue; */
+
+}
+
+.dron-text1 h1 {
+  color: white;
+}
+
+.dron-text2 {
+  position: relative;
+  display: inline-block;
+  width: 700px;
+  height: 50px;
+  top: 150px;
+  /* border:1px solid blue; */
+}
+
+.dron-text2 h5 {
+  color: white;
+}
+
+.dron-img3-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 450px;
+  top: 250px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background: linear-gradient(180deg, #363636 0%, #131313 7.96%);
+}
+
+.dron-text1 h1 {
+  color: white;
+}
+
+.dron-img3 {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  top: 25px;
+  left: 25px;
+  /* border:1px solid blue; */
+  background-image: url(../img/dron3.jpg);
+  background-size: cover;
+}
+
+.dron-img4 {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  left: 50px;
+  bottom: 175px;
+  /* border:1px solid blue; */
+  background-image: url(../img/dron4.jpeg);
+  background-size: cover;
+}
+
+.dron-text3 {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  left: 50px;
+  bottom: 303px;
+  /* border:1px solid blue; */
+  text-align: center;
+}
+
+.dron-text3 h6 {
+  position: relative;
+  color: white;
+  top: 55px;
+}
+
+.dron-text3 h6 span {
+  color: #809fe0;
+}
+
+.dron-text4 {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  left: 450px;
+  bottom: 303px;
+  /* border:1px solid blue; */
+  text-align: center;
+}
+
+.dron-text4 h6 {
+  position: relative;
+  color: white;
+  top: 5px;
+  font-size: 15px;
+}
+
+.dron-text4 h6 span {
+  color: #9d2884
+}
+
+.dron-img5 {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  left: 450px;
+  bottom: 303px;
+  /* border:1px solid blue; */
+  text-align: center;
+  background-image: url(../img/dron5.jpg);
+  background-size: cover;
+}
+
+.dron-img6-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  top: -35px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background: linear-gradient(180deg, #131313 94.79%, #313131 100%);
+}
+
+.dron-img6 {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  left: 25px;
+  top: 15px;
+  /* border:1px solid blue; */
+  text-align: center;
+  background-image: url(../img/dron6.jpg);
+  background-size: cover;
+}
+
+.dron-img7 {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  left: 45px;
+  top: 15px;
+  /* border:1px solid blue; */
+  text-align: center;
+  background-image: url(../img/dron7.jpg);
+  background-size: cover;
+}
+
+.dron-img8 {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  left: 65px;
+  top: 15px;
+  /* border:1px solid blue; */
+  text-align: center;
+  background-image: url(../img/dron8.jpg);
+  background-size: cover;
+}
+
+.dron-img12 {
+  position: relative;
+  display: inline-block;
+  width: 240px;
+  height: 150px;
+  left: 85px;
+  top: 15px;
+  /* border:1px solid blue; */
+  text-align: center;
+  background-image: url(../img/dron12.jpg);
+  background-size: cover;
+}
+
+.dron-img9 {
+  position: relative;
+  display: inline-block;
+  width: 230px;
+  height: 170px;
+  left: 25px;
+  top: 30px;
+  /* border:1px solid blue; */
+  text-align: center;
+  background-image: url(../img/dron9.jpg);
+  background-size: cover;
+}
+
+.dron-img10 {
+  position: relative;
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  left: 45px;
+  top: 30px;
+  /* border:1px solid blue; */
+  text-align: center;
+  background-image: url(../img/dron10.jpg);
+  background-size: cover;
+}
+
+.dron-img11 {
+  position: relative;
+  display: inline-block;
+  width: 410px;
+  height: 170px;
+  left: 65px;
+  top: 30px;
+  /* border:1px solid blue; */
+  text-align: center;
+  background-image: url(../img/dron11.jpg);
+  background-size: cover;
+}
+
+.dron-text5 {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  top: 50px;
+  /* border:1px solid blue; */
+  text-align: center;
+  color: white;
+}
+
+.dron-map-box {
+  position: relative;
+  display: inline-block;
+  width: 900px;
+  height: 500px;
+  top: -330px;
+  /* border:1px solid blue; */
+
+}
+
+.dron-map {
+  width: 900px;
+  height: 500px;
+  /* border:1px solid red; */
+}
+
+.dron-image-container-wrap {
+  position: relative;
+  display: inline-block;
+  width: 950px;
+  top: -336px;
+  height: 500px;
+  left: 5px;
+}
+
+.dron-image-container {}
+
+.dron-image {
+  width: 287px;
+  height: 250px;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+  box-shadow: 6px 5px 3px rgba(0, 0, 0, 0.529);
+
+
+}
+
+.dron-image-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dron-image-container::-webkit-scrollbar-track {
+  /* background-color: #f1f1f1; */
+}
+
+.dron-image-container::-webkit-scrollbar-thumb {
+  background-color: #ffffffee;
+  border-radius: 5px;
+}
+
+/* 스크롤바 위 아래 버튼 스타일 */
+.dron-image-container::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bitcamp.myapp.dao.CommentDao">
+
+  <resultMap type="comment" id="commentMap">
+     <id column="comment_id" property="no"/>
+    <result column="content" property="content"/>
+    <result column="board_id" property="boardNo"/>
+    <result column="created_date" property="createdDate"/>
+    
+      <association property="writer" javaType="member">
+      <id column="writer" property="no"/>
+      <result column="name" property="name"/>
+      <result column="nickName" property="nickName"/>
+    </association>
+  
+  </resultMap>
+
+  <insert id="insert" parameterType="comment" useGeneratedKeys="true" keyProperty="no" keyColumn="comment_id">
+  insert into hms_comm(content, writer, board_id)
+  values(#{content}, #{writer.no}, #{boardNo})
+</insert>
+  <select id="findAll" resultMap="commentMap">
+  select 
+      cm.comment_id, 
+      cm.writer, 
+      (select nick from hms_mem m where m.member_id = cm.writer) nickName,
+      cm.content,
+      cm.created_date,
+      cm.board_id,
+      b.board_id 
+    from 
+      hms_comm cm
+      inner join hms_gall b on cm.board_id=b.board_id
+    where
+    cm.board_id=#{boardNo}
+
+  </select>
+  <select id="findByNo" parameterType="int" resultMap="commentMap">
+  select
+  cm.writer
+  from hms_comm cm
+  inner join hms_mem m 
+  on cm.writer = m.member_id
+  where 
+  cm.comment_id = #{no}
+
+  </select>
+  
+  <update id="update" parameterType="comment">
+    update hms_comm set
+      content=#{content}
+    where comment_id=#{no}
+  </update>
+  
+  <delete id="delete" parameterType="int">
+    delete from hms_comm
+    where comment_id=#{no}
+  </delete>
+  
+  
+    <select id="findByEmailAndPassword" parameterType="map" resultMap="commentMap">
+    select
+      comment_id,
+      email,
+      name,
+      nick,
+      tel,
+      intro,
+      hob,
+      created_date
+    from 
+      hms_mem
+
+    where 
+      email = #{email} and pwd = sha2(#{password},256)
+  </select>
+
+  <select id="findByEmail" parameterType="string" resultMap="commentMap">
+    select
+      comment_id,
+      email,
+      name,
+      nick,
+      tel,
+      intro,
+      hob,
+      created_date
+    from 
+      hms_mem 
+    where 
+      email = #{email}
+  </select>
+</mapper>
+
+
+
+
+

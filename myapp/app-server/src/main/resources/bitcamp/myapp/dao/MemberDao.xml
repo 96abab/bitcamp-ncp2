@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bitcamp.myapp.dao.MemberDao">
+
+  <resultMap type="member" id="memberMap">
+     <id column="member_id" property="no"/>
+    <result column="email" property="email"/>
+     <result column="pwd" property="password"/>
+    <result column="name" property="name"/>
+    <result column="tel" property="tel"/>
+    <result column="nick" property="nickName"/>
+    <result column="intro" property="introduce"/>
+    <result column="inter" property="interest"/>
+    <result column="hob" property="hobby"/>
+    <result column="created_date" property="createdDate"/>
+    
+      
+    <collection property="attachedFiles" ofType="memberfile">
+      <id column="memberfile_id" property="no"/>
+      <result column="filepath" property="filepath"/>
+      <result column="origin_filename" property="originalFilename"/>
+      <result column="mime_type" property="mimeType"/>
+      <result column="member_id" property="memberNo"/>
+    </collection>
+    
+  </resultMap>
+
+  <insert id="insert" parameterType="member" 
+  useGeneratedKeys="true" keyProperty="no" keyColumn="member_id">
+    insert into hms_mem(
+      email,
+      pwd,
+      name,
+      tel,
+      nick,
+      intro,
+      inter,
+      hob)
+    values(#{email},sha2(#{password},256),#{name},#{tel},#{nickName},#{interest},#{introduce},#{hobby})
+  </insert>
+  
+  <select id="findAll" resultMap="memberMap">
+   select 
+      m.member_id,
+      m.email,
+      m.name,
+      m.nick,
+      m.tel,
+      m.intro,
+      m.inter,
+      m.hob,
+      mf.memberfile_id,
+      mf.filepath, 
+      mf.origin_filename,
+      mf.mime_type,
+      m.created_date,
+      b.writer
+    from 
+      hms_mem m
+      join hms_mem_file mf on m.member_id = mf.member_id
+      join hms_gall b on mf.member_id = b.writer
+      order by
+      mf.memberfile_id desc
+  </select>
+  
+    <select id="allMember" resultMap="memberMap">
+   select 
+      member_id,
+      email,
+      pwd,
+      name,
+      nick,
+      tel,
+      intro,
+      inter,
+      hob,
+      created_date
+    from 
+      hms_mem
+      order by
+      member_id desc
+  </select>
+  
+  <select id="findByEmailAndPassword" parameterType="map" resultMap="memberMap">
+    select
+      member_id,
+      email,
+      name,
+      nick,
+      tel,
+      intro,
+      inter,
+      hob,
+      created_date
+    from 
+      hms_mem
+
+    where 
+      email = #{email} and pwd = sha2(#{password},256)
+  </select>
+
+  <select id="findByEmail" parameterType="string" resultMap="memberMap">
+    select
+      member_id,
+      email,
+      name,
+      nick,
+      tel,
+      intro,
+      inter,
+      hob,
+      created_date
+    from 
+      hms_mem 
+    where 
+      email = #{email}
+  </select>
+
+  <select id="findByNo" parameterType="int" resultMap="memberMap">
+    select 
+      m.member_id,
+      m.email,
+      m.name,
+      m.nick,
+      m.tel,
+      m.intro,
+      m.inter,
+      m.hob,
+      mf.memberfile_id,
+      mf.filepath, 
+      mf.origin_filename,
+      mf.mime_type,
+      m.created_date
+    from 
+      hms_mem m
+       left outer join hms_mem_file mf on m.member_id = mf.member_id
+    where 
+      m.member_id=#{no}
+      order by
+      mf.memberfile_id desc
+  </select>
+  
+  <update id="update" parameterType="member">
+    update hms_mem set
+      name=#{name}, 
+      nick=#{nickName},
+      intro=#{introduce},
+      inter=#{interest},
+      hob=#{hobby}
+    where member_id=#{no}
+  </update>
+  
+  <delete id="delete" parameterType="int">
+    delete from hms_mem
+    where member_id=#{no}
+  </delete>
+</mapper>
+
+
+
+
+

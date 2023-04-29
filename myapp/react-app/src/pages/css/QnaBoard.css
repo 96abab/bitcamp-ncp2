@@ -1,0 +1,46 @@
+.faq-board {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-board h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-board ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-board li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-board li h2 {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-board li p {
+  display: none;
+  padding: 15px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.faq-board li.open p {
+  display: block;
+}

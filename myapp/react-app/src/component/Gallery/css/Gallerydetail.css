@@ -1,0 +1,340 @@
+.clickPage {
+  background-color: #00000060;
+  width: 400px;
+  min-height: 605px;
+  margin-top: -320px;
+  margin-left: -200px;
+  border-radius: 15px;
+}
+
+.gclickbox {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: 60px 400px 50px 30px 140px;
+  border-radius: 15px;
+}
+
+.gheader {
+  width: 400px;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 70px 170px 20px 20px 120px;
+  grid-template-rows: 60px;
+}
+
+.gheadprofile {
+  margin-top: 5px;
+  margin-left: 10px;
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 180px;
+}
+
+.gheaduser {
+  margin-top: 20px;
+  width: 170px;
+  height: 20px;
+  font-weight: bold;
+
+}
+
+.gheadfollow {
+  position: absolute;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 320px;
+  width: 70px;
+  height: 30px;
+  background-color: #3897F0;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.gheadfollow:active {
+  transform: scale(0.96);
+}
+
+.gbody {
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+}
+
+.glike {
+  /* background-color: red; */
+  display: inline;
+  width: 40px;
+  height: 30px;
+}
+
+.glikesum {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* .gbecontent {
+  font-size: 16px;
+  text-align: left;
+  width: 370px;
+  min-height: 30px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 15px;
+} */
+
+.glikebnt {
+  background-color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  left: 10px;
+}
+
+.gcommentbnt {
+  position: absolute;
+  display: inline-block;
+  top: 462px;
+  left: 130px;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  background-image: url(../img/message.png);
+  background-size: cover;
+  border: none;
+}
+
+.gdetail-modal-box {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  background-color: #3897F0;
+  /* border: 1px solid darkblue; */
+  /* width: 400px; */
+}
+
+.gdetail-modal-box2 {
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  /* border: 1px solid darkblue; */
+  /* width: 400px; */
+}
+
+.modal-header {
+  display: inline-block;
+  position: absolute;
+  border: 0px solid;
+  width: 100px;
+  height: 50px;
+  top: 50px;
+  left: 375px;
+}
+
+.gmodal-close {
+  border: 0px solid;
+  width: 25px;
+  height: 25px;
+}
+
+/* .modal-body{
+  position: relative;
+  display: inline-block;
+} */
+/* .clickPage{
+  width:400px;
+} */
+/* .modal-content{
+  position: relative;
+  display:inline-block;
+  width:500px;
+  left:250px;
+} */
+
+/*호버전 색 조정*/
+.x-container {
+  width: 40px;
+  height: 40px;
+  /* background-color: rgb(137, 137, 137); */
+  border-radius: 30px;
+  transition: 250ms ease;
+  cursor: pointer;
+  position: absolute;
+  top: -360px;
+  left: 172px;
+}
+
+/*호버전 색 조정*/
+.x-container:hover {
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 3px2px 2px rgb(190, 190, 190);
+  border-radius: 30px;
+}
+
+.x-container div {
+  transition: 250ms ease;
+}
+
+.x-container div:first-of-type {
+  width: 3px;
+  height: 20px;
+  background-color: #ffff;
+  border-radius: 2px;
+  position: absolute;
+  top: 23.9%;
+  left: 44.7%;
+  transform: translateX(-50%);
+  transform: rotate(45deg);
+}
+
+.x-container div:last-of-type {
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  position: absolute;
+  top: 45%;
+  left: 24%;
+  transform: translateX(-50%);
+  transform: rotate(45deg);
+}
+
+
+.x-container:hover div:first-of-type {
+  height: 25;
+  transform: translateX(calc(-50% + 1.8px)) rotate(135deg) translateY(0px);
+}
+
+.x-container:hover div:last-of-type {
+  width: 20px;
+  transform: translateX(calc(-50% + 9.5px)) rotate(-45deg) translateY(0px);
+}
+
+
+.gdetail-image-container {
+  position: relative;
+}
+
+.gdetail-image-navigation {
+  position: absolute;
+  top: 93%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* transform: translateY(-50%); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.gdetail-prev-button {
+  left: 0;
+}
+
+.gdetail-next-button {
+  right: 0;
+}
+
+.gdetail-prev-button,
+.gdetail-next-button {
+  position: relative;
+  width: 25px;
+  height: 22px;
+  pointer-events: auto;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 190px;
+  opacity: 50%;
+
+}
+
+.gdetail-prev-button,
+.gdetail-next-button:hover {
+  opacity: 100%;
+
+}
+
+.gdetail-prev-button:hover,
+.gdetail-next-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gdetail-image-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 16px;
+  padding: 2px 5px;
+  pointer-events: none;
+}
+
+.gdeletebnt {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  margin-left: 120px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/delete2.png);
+  background-size: cover;
+}
+
+.gview-cnt {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  left: 350px;
+  top: 465px;
+  text-align: left;
+}
+
+.gtag-list {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.viewcnt-img {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/view.png);
+  background-size: cover;
+  top: 463px;
+  left: 315px;
+}
+
+.Gallerymodify-button {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  left: 330px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/edit2.png);
+  background-size: cover;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

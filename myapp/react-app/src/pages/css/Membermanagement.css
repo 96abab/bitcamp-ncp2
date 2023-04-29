@@ -1,0 +1,28 @@
+.Membermanagement-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.Membermanagement-box h2 {
+  margin-bottom: 1rem;
+}
+
+.Membermanagement-box input {
+  display: block;
+  width: 20%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.Membermanagement-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Membermanagement-box th,
+.Membermanagement-box td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}

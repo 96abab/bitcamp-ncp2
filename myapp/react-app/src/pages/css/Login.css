@@ -1,0 +1,149 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.443),
+  rgba(203, 202, 202, 0.342)), url(../img/login.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.login-box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.0975);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  width: 350px;
+  color: black;
+}
+
+.login-box-id {
+  background-color: #ffffff70;
+  border-bottom: 0px none;
+  color: wheat;
+  width: 250px;
+  margin: auto;
+
+}
+
+.login-box-pwd {
+  background-color: #ffffff70;
+  border-bottom: 0px none;
+  width: 250px;
+  margin: auto;
+}
+
+.login-box h1 {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 85%;
+}
+
+.login-box form input {
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  color: #262626;
+  font-size: 14px;
+  padding: 9px 12px;
+  margin-bottom: 10px;
+}
+
+.login-box form button {
+  background-color: #4d575e;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 85px;
+  width: 130px;
+}
+
+.login-box form button:hover {
+  background-color: #92b7d0;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.separator span {
+  color: #8e8e8e;
+  font-size: 14px;
+  margin: 0 18px;
+}
+
+.signup-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.signup-box p {
+  color: #2e2e2e;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.signup-box a {
+  color: #38acf9ac;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.signup-box a:hover {
+  text-decoration: underline;
+}
+
+.email-check {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  left: 110px;
+  top: 7px;
+  width: 20px;
+  border: solid black 1px;
+
+}
+
+.email-save{
+  position: relative;
+  display: inline;
+  text-align: center;
+  bottom: -7px;
+  width: 100px;
+  left: 115px;
+}
+
+.admin {
+  display: none;
+}

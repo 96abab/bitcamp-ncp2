@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <div class="header">
+  </div>
+  <div class="login-container">
+    <div class="login-box">
+      <h1>HANGANG</h1>
+
+      <form id="login-form" action="login" method="post">
+        <input type="radio" name="usertype" value="member" checked class="admin"> 
+        <input type="email" placeholder="email" class="login-box-id" name="email" value="">
+        <input type="password" placeholder="password" class="login-box-pwd" name="password">
+ 
+        <button id="btn-login" type="button">LOG IN</button>
+        <input type="checkbox" class="email-check"> <span class="email-save">이메일 저장</span>
+     
+      </form>
+
+      <div class="signup-box">
+        <p>아직 계정이 없으신가요?</p>
+        <a href="join.html">회원가입</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/login.js"></script>
+
+</html>

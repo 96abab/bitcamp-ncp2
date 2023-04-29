@@ -1,0 +1,15 @@
+.content{
+  padding: 80px 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  font-size: 36px;
+  margin-bottom: 32px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.8;
+}

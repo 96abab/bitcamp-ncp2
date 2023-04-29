@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>한강</title>
+    <link rel="stylesheet" href="css/index.css"/>
+  </head>
+  <body>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">HANGANG</a></li>
+            <li>
+              <a href="#" id="festival-dropdown" class="fes">FESTIVAL</a>
+              <ul id="festival-menu">
+                <li><a href="#">벚꽃축제</a></li>
+                <li><a href="#">마라톤</a></li>
+                <li><a href="#">야시장</a></li>
+                <li><a href="#">불꽃축제</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="gall">GALLERY</a></li>
+            <li><a href="#" id="hotplace-dropdown" class="hot">HOTPLACE</a></li>
+            <ul id="hotplace-menu">
+              <li><a href="#">Restaurant</a></li>
+              <li><a href="#">Sights</a></li>
+              <li><a href="#">Parking</a></li>
+            </ul>
+            <li><a href="#" class="qa">Q&A</a></li>
+            <ul>
+              <li class="logout"><a href="app/auth/logout" onclick="logout(); return false;">로그아웃(<span id="username"></span>)</a>
+              </li>
+            <li><a href="auth/login.html" class="login">LOGIN</a></li>
+         
+            </ul>
+          </ul>
+        </nav>
+      </header>
+  
+      <section class="banner">
+        <div class="banner-text">
+          <h1>새로운 경험,기억<br />HANGANG</h1>
+          <p>HANGANG으로 간편하게 경험하세요.</p>
+          <a href="#">자세히 알아보기</a>
+        </div>
+      </section>
+  
+      <section class="content">
+        <h2>HANGANG 은 무엇인가요?</h2>
+        <p>
+          HANGANG은 축제및 이벤트와 함께 한강에서 즐길수 있는 다양한 볼거리와
+          경험을 제공합니다. 크루즈,수상택시를 이용할 수 있는 간편한 결제 시스템과
+          해당 지역의 날씨 기온등 HANGANG을 통해서 원하는 정보를 쉽게 얻을 수
+          있습니다. 간단한 검색으로는 찾기 힘들었던 한강에 다른 모습 HANGANG을
+          통해서 알아볼까요??
+        </p>
+      </section>
+  
+      <section class="benefits">
+        <h2>이달의 축제</h2>
+        <p>
+          HANGANG을 통해 다양한 기관에서 계최하는 축제를 경험할 수 있습니다.
+          대표적인 축제로는 다음과 같은 것들이 있습니다.
+        </p>
+        <ul>
+          <section class="festival">
+            <div class="festival-list">
+              <div class="festival-item">
+                <button class="f1"></button>
+                <div class="f2">
+                  ABOUT <br />
+                  cherry blossoms festival. <br />
+                  show more
+                </div>
+                <div class="ff1">
+                  ABOUT <br />
+                  Fireworks festival. <br />
+                  show more
+                </div>
+                <button class="ff2"></button>
+                <button class="fff1"></button>
+                <div class="fff2">
+                  ABOUT <br />
+                  Bamdokkaebi Night Market. <br />
+                  show more
+                </div>
+                <div class="ffff1">
+                  ABOUT <br />
+                  marathon. <br />
+                  show more
+                </div>
+                <button class="ffff2"></button>
+              </div>
+            </div>
+          </section>
+        </ul>
+      </section>
+  
+      <footer>
+        <p>&copy; 2023 hangang.</p>
+      </footer>
+    <script src="js/index.js">    </script>
+  </body>
+</html>

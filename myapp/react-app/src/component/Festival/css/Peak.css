@@ -1,0 +1,401 @@
+.peak-wrap {
+  position: relative;
+  display: inline-block;
+  top: 100px;
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  /* border:1px solid blue; */
+  text-align: center;
+}
+
+.peak-main {
+  position: relative;
+  display: inline-block;
+  width: 900px;
+  min-height: 3550px;
+  height: auto;
+  background-color: #008739;
+}
+
+.peak-poster-img {
+  position: relative;
+  display: inline-block;
+  width: 700px;
+  height: 800px;
+  /* border:1px solid blue; */
+  background-image: url(../img/peakposter.jpg);
+  background-size: cover;
+}
+
+.peak-text1 {
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 50px;
+  /* border:1px solid blue; */
+  top: 50px;
+  right: 50px;
+  text-align: left;
+}
+
+.peak-text1 h6 {
+  color: black;
+  -webkit-text-stroke: .8px #c1c1c1;
+}
+
+.peak-text2 {
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 50px;
+  top: 100px;
+  right: 90px;
+  /* border:1px solid blue; */
+  text-align: left;
+}
+
+.peak-text2 h4 {
+  font-weight: bold;
+  color: #f493b6;
+  -webkit-text-stroke: 1px #8e4e4e;
+}
+
+.peak-text3 {
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 30px;
+  top: 120px;
+  right: 90px;
+  /* border:1px solid blue; */
+  text-align: left;
+}
+
+.peak-text3 h4 {}
+
+.peak-text4 {
+  position: relative;
+  display: inline-block;
+  width: 700px;
+  height: 180px;
+  top: 140px;
+  left: 30px;
+  /* border:1px solid blue; */
+  text-align: left;
+}
+
+.peak-text4 h4 {}
+
+.peak-text4 span {
+  color: #ffcd02;
+}
+
+.peak-singer-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 620px;
+  top: 180px;
+  /* border:1px solid blue; */
+  text-align: left;
+}
+
+.peak-singer1 {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  top: 0px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/singer1.jpg);
+  background-size: cover;
+}
+
+.peak-singer2 {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  top: 0px;
+  left: 30px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/singer2.jpg);
+  background-size: cover;
+}
+
+.peak-singer3 {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  top: 0px;
+  left: 60px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/singer3.jpg);
+  background-size: cover;
+}
+
+.peak-singer4 {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  top: 60px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/singer4.jpg);
+  background-size: cover;
+}
+
+.peak-singer5 {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  top: 60px;
+  left: 30px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/singer5.jpg);
+  background-size: cover;
+}
+
+.peak-singer6 {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  top: 60px;
+  left: 60px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/singer6.jpg);
+  background-size: cover;
+}
+
+.peak-text5 {
+  position: relative;
+  display: inline-block;
+  width: 700px;
+  height: 50px;
+  /* border:1px solid blue; */
+  top: 250px;
+
+  text-align: left;
+}
+
+.peak-text6 {
+  position: relative;
+  display: inline-block;
+  width: 700px;
+  height: 250px;
+  top: 260px;
+  left: 20px;
+  /* border:1px solid blue; */
+  text-align: left;
+}
+
+.peak-text6 span {
+  color: #ffcd02;
+}
+
+.peak-text6 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.peak-text6 a:hover {
+  color: black;
+}
+
+.peak-poster-img2 {
+  position: relative;
+  display: inline-block;
+  width: 700px;
+  height: 700px;
+  top: 320px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/peakposter2.jpg);
+  background-size: cover;
+}
+
+.peak-poster-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 620px;
+  top: 100px;
+  border: 1px solid blue;
+  text-align: left;
+}
+
+.peak-photo1 {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  top: -100px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/photo1.jpg);
+  background-size: cover;
+}
+
+.peak-photo2 {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  top: -100px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/photo2.jpg);
+  background-size: cover;
+}
+
+.peak-photo3 {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  top: -100px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/photo3.jpg);
+  background-size: cover;
+}
+
+.peak-poster-wrap2 {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 620px;
+  top: 100px;
+  /* border:1px solid blue; */
+  text-align: left;
+}
+
+.peak-photo4 {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  top: -100px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/photo4.jpg);
+  background-size: cover;
+}
+
+.peak-photo5 {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  top: -100px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/photo5.jpg);
+  background-size: cover;
+}
+
+.peak-photo6 {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  top: -100px;
+  /* border:1px solid blue; */
+  text-align: left;
+  background-image: url(../img/photo6.jpg);
+  background-size: cover;
+}
+
+.Peak-map-box {
+  position: relative;
+  display: inline-block;
+  width: 900px;
+  height: 600px;
+  bottom: 490px;
+}
+
+.peak-map {
+  width: 900px;
+  height: 500px;
+}
+
+.peak-poster-wrap,
+.peak-poster-wrap2 {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+.peak-poster-wrap::-webkit-scrollbar,
+.peak-poster-wrap2::-webkit-scrollbar {
+  display: none;
+  /* For Chrome, Safari, and Opera */
+}
+
+.peak-photo1,
+.peak-photo2,
+.peak-photo3,
+.peak-photo4,
+.peak-photo5,
+.peak-photo6 {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.peak-image-container-wrap {
+  position: relative;
+  display: inline-block;
+  width: 950px;
+  top: -590px;
+  height: 500px;
+  left: 5px;
+}
+
+.peak-image-container {}
+
+.Peak-image {
+  width: 287px;
+  height: 250px;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+  box-shadow: 6px 5px 3px rgba(0, 0, 0, 0.529);
+
+
+}
+
+.peak-image-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.peak-image-container::-webkit-scrollbar-track {
+  /* background-color: #f1f1f1; */
+}
+
+.peak-image-container::-webkit-scrollbar-thumb {
+  background-color: #ffffffee;
+  border-radius: 5px;
+}
+
+/* 스크롤바 위 아래 버튼 스타일 */
+.peak-image-container::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}

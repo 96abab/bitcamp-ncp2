@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.heart-btn{
+  position: absolute;
+  top: 485px;
+  left:52px;
+  transform: translate(-50%,-50%);
+  
+}
+.heart-content{
+  padding: 4px 10px 4px 10px;
+  display: flex;
+  /* margin: auto; */
+  border: 2px solid #eae2e1;
+  border-radius: 5px;
+  cursor: pointer;
+  width:100px;
+
+}
+.heart-content.heart-active{
+  border-color: #f9b9c4;
+  background: #fbd0d8;
+}
+.heart{
+  position: absolute;
+  background: url("../img/heart.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 35px;
+  width: 80px;
+  top: 50%;
+  left: 20px;
+  transform: translate(-50%,-50%);
+}
+.heart-text{
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 23px;
+  color: grey;
+  left :1px;
+  top:1px;
+  font-family: 'Montserrat',sans-serif;
+}
+.numb:before{
+  font-size: 15.3px;
+  margin-left: 2px;
+  font-weight: 650;
+  color: #9C9496;
+  font-family: sans-serif;
+  position: relative;
+  left:10px;
+  top:-1px;
+}
+.numb.heart-active:before{
+  margin-left: 3px;
+  color: #000;
+}
+.heart-text.heart-active{
+  margin-left: 22px;
+  color: #000;
+}
+.heart.heart-active{
+  animation: animate .8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
+/* .heartbtn{
+  margin-top: 50px;
+  margin-left: 50px;
+} */
+.numb{
+position: relative;
+display: inline-block;
+bottom:1px;
+left: 5px;
+font-weight: bold;
+width:30px;
+}

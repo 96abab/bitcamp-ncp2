@@ -1,0 +1,71 @@
+.gall-img-wrap{
+position: absolute;
+display: inline-block;
+left:5px;
+top:7px;
+width: 34px;
+height: 30px;
+border-radius: 100%;
+
+}
+.gall-img-profile{
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  border-radius: 100%;
+  }
+
+.gall-writer-wrap{
+position: absolute;
+display: inline-block;
+left :50px;
+top:10px;
+
+
+}
+.gall-writer-wrap p{
+  position: absolute;
+  display: inline-block;
+  color:white;
+  background-color:rgba(0, 0, 0, 0.1);
+  width:100px;
+  }
+
+.gall-like-wrap{
+  position: absolute;
+  display: inline-block;
+  left:320px;
+  top:6px;
+}
+.gall-like-wrap p{
+  position: absolute;
+  display: inline-block;
+  width:40px;
+  color:white;
+  text-align: left;
+}
+.gall-like-img{
+  position: absolute;
+  display: inline-block;
+  top:9px;
+  width: 20px;
+  height: 20px;
+  left:295px;
+  background-image:url(../img/heart2.png);
+  background-size: cover;
+
+}
+.gall-date-wrap{
+  position: absolute;
+  display: inline-block;
+  top:320px;
+  left:285px;
+}
+.gall-date-wrap p{
+  position: absolute;
+  display: inline-block;
+  color:white;
+  width:75px;
+  text-align: left;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bitcamp.myapp.dao.FollowDao">
+
+  <resultMap type="follow" id="followMap">
+    <id column="follow_id" property="id"/>
+    <result column="followed_id" property="followedId"/>
+    
+    <association property="follower" javaType="member">
+      <id column="member_id" property="no"/>
+      <result column="name" property="name"/>
+      <result column="nickName" property="nickName"/>
+    </association>
+  </resultMap>
+
+  <insert id="insertFollow" parameterType="follow">
+    insert into hms_follow (followed_id, follower_id)
+    values (#{followedId}, #{follower.no})
+  </insert>
+
+  <select id="findFollowersByFollowedId" resultMap="followMap" parameterType="int">
+  <!-- 내 프로필에서 팔로워 찾기 -->
+    select
+      f.follow_id,
+      f.followed_id,
+      f.follower_id,
+      m.name,
+      m.member_id,
+      (select nick from hms_mem where member_id = f.follower_id) nickName
+    from
+      hms_follow f
+      inner join hms_mem m on f.follower_id = m.member_id
+    where
+      f.followed_id = #{followedId}
+  </select>
+
+  <select id="findFollowingByFollowerId" resultMap="followMap" parameterType="int">
+  <!-- 내프로필에서 팔로잉 찾기-->
+    select
+      f.follow_id,
+      f.followed_id,
+      f.follower_id,
+      m.name,
+      (select nick from hms_mem where member_id = f.followed_id) nickName
+    from
+      hms_follow f
+      inner join hms_mem m on f.followed_id = m.member_id
+    where
+      f.follower_id = #{followerId}
+  </select>
+
+  <delete id="deleteFollow" parameterType="follow">
+    delete from hms_follow
+    where followed_id = #{followedId}
+    and follower_id = #{follower.no}
+  </delete>
+
+</mapper>

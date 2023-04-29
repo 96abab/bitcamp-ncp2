@@ -1,0 +1,149 @@
+#festival-menu {
+  display: none;
+  position: absolute;
+}
+
+#festival-menu.show {
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 500px;
+}
+
+#hotplace-menu {
+  display: none;
+  position: absolute;
+}
+
+#hotplace-menu.show {
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 865px;
+}
+
+/* 네비게이션 바 */
+nav {
+  background-color: #000;
+  height: 64px;
+  display: flex;
+  /* display 속성을 flex로 변경 */
+  align-items: center;
+  justify-content: space-between;
+  /* 자식 요소들을 좌우로 정렬 */
+}
+
+nav ul {
+  display: flex;
+  /* display 속성을 flex로 변경 */
+  gap: 20px;
+  /* 열 사이의 간격 */
+  margin-bottom: 5px;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 32px;
+  /* margin-right 속성 추가 */
+  position: relative;
+  top: 5px;
+}
+
+nav li:first-child {
+  margin-right: 32px;
+}
+
+nav li:nth-child(2) {
+  margin-left: 170px;
+}
+
+nav li:nth-child(3) {
+  margin-left: 30px;
+}
+
+nav li:nth-child(4) {
+  margin-left: 0px;
+}
+
+nav li:nth-child(5) {
+  margin-left: 15px;
+}
+
+nav li:nth-child(6) {
+  margin-left: 10px;
+}
+
+nav li:nth-child(7) {
+  margin-left: 10px;
+}
+
+nav li:nth-child(8) {
+  margin-left: -60px;
+}
+
+nav li:nth-child(9) {
+  margin-left: 0px;
+}
+
+nav li:nth-child(10) {
+  margin-left: -40px;
+}
+
+nav li:nth-child(11) {
+  margin-left: -110px;
+}
+
+.logout {
+  background-color: #000;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout span:hover {
+  color: aqua;
+}
+
+/* .mypage{
+  margin-left: 25px;
+  height: 20px;
+   position: relative;
+   bottom:7px;
+ 
+} */
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 16px;
+
+}
+
+nav a:hover {
+  color: aqua;
+}
+
+.main-profile-img {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.logout-span {
+  position: relative;
+  display: inline-block;
+  right: 5px;
+}
+
+.membermanagement {
+  width: 100px;
+}

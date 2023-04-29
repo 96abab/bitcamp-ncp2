@@ -1,0 +1,39 @@
+.Reservation-body {
+  height: 100vh;
+  display: flex;
+  margin: 0;
+ background-color: black;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.Reservation-group {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.Reservation-item {
+  width: 25vw;
+  height: 75vh;
+  background-position: center;
+  background-size: 75vh;
+  margin: 1vw;
+  border-radius: 3vw;
+  display: inline-block;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Reservation-item-text{
+text-align: center;
+color:white;
+position: relative;
+top:160px;
+font-size: 25px;
+font-weight: bold;
+}

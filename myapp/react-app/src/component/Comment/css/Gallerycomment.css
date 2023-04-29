@@ -1,0 +1,179 @@
+.gallery-comment-modal {
+  top: 75px;
+  left: 1055px;
+  width: 450px;
+  border-radius: 25px;
+}
+
+.gallery-comment-modal-body {
+  background-color: rgb(245, 245, 245, 0.3);
+  max-height: 600px;
+  width: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.gallery-dcontent {
+  display: block;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 100px;
+}
+
+.gallery-dtitle {
+  margin-top: 20px;
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+.gcomment-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.gcomment-list::-webkit-scrollbar-track {
+  /* background-color: #f1f1f1; */
+}
+
+.gcomment-list::-webkit-scrollbar-thumb {
+  background-color: #ffffff31;
+  border-radius: 5px;
+}
+
+/* 스크롤바 위 아래 버튼 스타일 */
+.gcomment-list::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.gcomment-add {
+  margin-top: 20px;
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gcomment-add input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 320px;
+}
+
+
+.gcomment-list {
+  overflow-Y: auto;
+  max-height: 280px;
+  margin: 35px 0;
+}
+
+.comment-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.gprofile-img {
+  position: relative;
+  display: inline-block;
+  /* background-image: url(https://images-ext-2.discordapp.net/external/k496ijrcjYv-XqebZOS9HnfW1-QjyF5m21FrsUKIL2s/%3Ftype%3Df%26w%3D260%26h%3D260%26faceopt%3Dtrue%26ttype%3Djpg/http/tbxctpxzerdz16840769.cdn.ntruss.com/defaultprofile.jpg?width=30&height=30); */
+  width: 30px;
+  height: 30px;
+
+}
+
+.gprofile-img img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.gcomment-nickname {
+  position: relative;
+  left: 10px;
+  width: 100px;
+  height: 20px;
+  bottom: 2px;
+
+}
+
+.gcooment-content {
+  position: relative;
+  display: inline-block;
+  left: 10px;
+  width: 50%;
+}
+
+.comment-update-btn {
+  background-image: url(../img/edit.png);
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 0;
+  background-color: transparent;
+  left: 15px;
+}
+
+.comment-delete-btn {
+  background-image: url(../img/delete.png);
+  background-size: cover;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  left: 15px;
+  top: 0.5px;
+}
+
+.comment-save {
+  background-image: url(../img/save.png);
+  background-size: cover;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  left: 5px;
+  top: 0.5px;
+}
+
+.comment-cancel {
+  background-image: url(../img/cancel.png);
+  background-size: cover;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  left: 10px;
+  top: 0.5px;
+}
+
+.comment-push-btn {
+  background-image: url(../img/push.png);
+  background-size: cover;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  left: 15px;
+  top: 0.5px;
+}
